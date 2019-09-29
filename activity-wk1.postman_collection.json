@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "47766f99-91d5-4fe0-bc56-645cf8adda35",
+		"name": "Activity Week 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2942/activity/test/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2942",
+					"path": [
+						"activity",
+						"test",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Example Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2942/activity/example/get?x=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2942",
+					"path": [
+						"activity",
+						"example",
+						"get"
+					],
+					"query": [
+						{
+							"key": "x",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Example POst",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"x\": 100,\n\t\"y\": 25\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2942/activity/example/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2942",
+					"path": [
+						"activity",
+						"example",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

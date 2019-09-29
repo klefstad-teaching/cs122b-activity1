@@ -1,0 +1,10 @@
+serviceConfig:
+  scheme: http://
+  hostName: 0.0.0.0
+  port: 2942
+  path: /activity
+
+loggerConfig:
+  outputDir: ./logs/
+  outputFile: test.log
+
