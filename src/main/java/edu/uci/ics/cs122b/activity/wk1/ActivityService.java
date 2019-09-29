@@ -141,8 +141,10 @@ public class ActivityService {
 
             ResourceConfig rc = new ResourceConfig().packages(RESOURCE_PATH);
             ServiceLogger.LOGGER.config("Set Jersey resources.");
+
             rc.register(JacksonFeature.class);
             ServiceLogger.LOGGER.config("Set Jackson as serializer.");
+
             ServiceLogger.LOGGER.config("Starting HTTP server...");
             HttpServer server = GrizzlyHttpServerFactory.createHttpServer(uri, rc, false);
             server.start();
