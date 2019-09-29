@@ -39,9 +39,6 @@ public class ActivityService {
         ServiceLogger.LOGGER.config("Starting service...");
         serviceConfigs.currentConfigs();
 
-        // Create a connection to the database
-        // connectToDatabase();
-
         // Initialize HTTP sever
         initHTTPServer();
 

@@ -15,11 +15,12 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-@Path("example")
+
+@Path("example") // Outer path
 public class ActivityPage {
 
-    @Path("post")
-    @POST
+    @Path("post") // This function's path
+    @POST // Type of request
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     // Example endpoint to add two numbers
@@ -63,8 +64,9 @@ public class ActivityPage {
         return Response.status(Response.Status.OK).entity(responseModel).build();
     }
 
-    @Path("get")
-    @GET
+    @Path("get") // This function's path
+    @GET // Type of request
+    // Note that get requests do not "consume"
     @Produces(MediaType.APPLICATION_JSON)
     // Example endpoint to add 10 to a number
     public Response exampleGet(@Context HttpHeaders headers, @QueryParam("x") Integer x) {

@@ -9,8 +9,8 @@ public class ServiceConfigs {
     // Default gateway configs
     private final String DEFAULT_SCHEME = "http://";
     private final String DEFAULT_HOSTNAME = "0.0.0.0";
-    private final int    DEFAULT_PORT = 6243;
-    private final String DEFAULT_PATH = "/api/test";
+    private final int    DEFAULT_PORT = 2942;
+    private final String DEFAULT_PATH = "/activity";
     // Default logger configs
     private final String DEFAULT_OUTPUTDIR = "./logs/";
     private final String DEFAULT_OUTPUTFILE = "test.log";

@@ -8,13 +8,10 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-@Path("test")
+@Path("test") // Outer path
 public class TestPage {
-    // Set the path for this function
-    @Path("hello")
-    // Set the HTTP request method
-    @GET
-    // Set the type of content that will be sent in response
+    @Path("hello") // This function's path
+    @GET // Type of request
     @Produces(MediaType.APPLICATION_JSON)
     public Response helloWorld() {
         System.err.println("Hello world!");
