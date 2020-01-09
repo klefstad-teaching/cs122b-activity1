@@ -1,12 +1,12 @@
-package edu.uci.ics.cs122b.activity.wk1.resources;
+package edu.uci.ics.cs122b.activity1.resources;
 
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.uci.ics.cs122b.activity.wk1.logger.ServiceLogger;
-import edu.uci.ics.cs122b.activity.wk1.models.ExampleRequestModel;
-import edu.uci.ics.cs122b.activity.wk1.models.ExampleResponseModel;
+import edu.uci.ics.cs122b.activity1.logger.ServiceLogger;
+import edu.uci.ics.cs122b.activity1.models.ExampleRequestModel;
+import edu.uci.ics.cs122b.activity1.models.ExampleResponseModel;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
