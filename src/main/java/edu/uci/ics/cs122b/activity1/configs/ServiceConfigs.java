@@ -16,14 +16,14 @@ public class ServiceConfigs {
     private final String DEFAULT_OUTPUTFILE = "test.log";
 
     // Service configs
-    private String scheme;
-    private String hostName;
-    private int port;
-    private String path;
+    private String scheme = DEFAULT_SCHEME;
+    private String hostName = DEFAULT_HOSTNAME;
+    private int port = DEFAULT_PORT;
+    private String path = DEFAULT_PATH;
 
     // Logger configs
-    private String outputDir;
-    private String outputFile;
+    private String outputDir = DEFAULT_OUTPUTDIR;
+    private String outputFile = DEFAULT_OUTPUTFILE;
 
     public ServiceConfigs() { }
 
